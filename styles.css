@@ -121,12 +121,17 @@ background-color: var(--off-white);
     padding: 1rem;
 }
 
+.blog-note{
+    background-color: var(--off-white);
+}
+
 /* footer */
 .footer{
     background-color: var(--primary-color);
     padding:2rem 1rem;
     text-align: center;
     color:white;
+    margin-top: 5rem;
     border-top-right-radius: 1rem;
 }
 

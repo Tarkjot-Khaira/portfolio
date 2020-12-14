@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>git | tarkjotkhaira</title>
+    <link href="/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <nav class="navigation container">
+        <div class="nav-brand">tarkjotkhaira</div>
+        <ul class="list-non-bullet nav-pills">
+            <li class="list-item-inline">
+                <a class="link" href="/">Home</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="/projects.html">Projects</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link link-active" href="/blogs.html">Blogs</a>
+            </li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <h1 class="hero-heading">
+            read my blog on<span class="hero-inverted"> git</span>
+        </h1>
+    </header>
+
+    <div class="container container-center">
+
+        <h1>7 most useful commands of git for beginners</h1>
+
+        <small>December, 2020</small>
+
+        <img class="blog-image" src="/images/git.svg" />
+
+        <h2>let's quickly see, what is git?</h2>
+        <p class="blog-text">Git is a version control system which is freely available. It helps in tracking your
+            projects and keeping them organized.</p>
+
+        <h2>prerequisites</h2>
+        <p class="blog-text">You must have downloaded the git on your system, then just open the terminal and go to your
+            git directory.</p>
+
+        <h2>we are good to go now!</h2>
+
+        <ol>
+
+            <li>
+                <h3>git pull</h3>
+
+                <p class="blog-text">It will pull all the updates from the server into your local machine. By doing it,
+                    we are downloading all the changes( most likely done by your other team members) and making your
+                    code updated with the latest one present on the server. It's just like we sync our google accounts
+                    on different devices so that we are provided with updated information.</p>
+            </li>
+
+            <li>
+                <h3>git status</h3>
+
+                <p class="blog-text">It basically tells the state of your repository and would provide the following
+                    information:</p>
+                <ul style="list-style-type: disc;">
+                    <li>
+                        <p>It lets you know about your current branch in which you are working.</p>
+                    </li>
+                    <li>
+                        <p>It enlists the modified files. It informs you if there are any changes in the existing files
+                            that are not yet committed to git.</p>
+                    </li>
+                    <li>
+                        <p>It tells you about untracked files i.e. which are on your local machine and yet not committed
+                            to git.</p>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <h3>git diff</h3>
+
+                <p class="blog-text">It will enlist all changes in all files.The code which has been removed will be
+                    displayed in red.The new code which has been added to the file will be displayed in green.</p>
+                <p class="blog-text blog-note"><strong>git diff [filename] :- </strong>It will mention changes only in
+                    that particular filename.</p>
+            </li>
+
+            <li>
+                <h3>git checkout</h3>
+
+                <p class="blog-text">It is most commonly used to switch to a different branch. Another most common use
+                    for checkout is when you want to restore the previous version of the file.</p>
+                <h4>how to restore the version of file?</h4>
+                <p class="blog-text">For e.g. you have done some changes in the file and save it, now if you check the
+                    git status it will tell you list of modified files and will give you 2 suggestions:
+                    <ul style="list-style-type: disc;">
+                        <li>
+                            If you want to add this file in your next commit then use git add “filename”.
+                        </li>
+                        <li>
+                            If you want to discard the changes, then use <strong>git checkout “filename”.</strong>
+                            By doing checkout this file, it’s previous version will be restored on your local machine.
+                        </li>
+                    </ul>
+                </p>
+            </li>
+
+            <li>
+                <h3>git add [filename]</h3>
+                <p class="blog-text">It tells Git that you want to add this particular file into your next commit.
+                    However, git add doesn't update the git repository until you run git commit.<br />It’s like you are
+                    selecting the changes for which you will do a commit.(just like when you finalizes the products in
+                    the supermarket by putting it in your cart , for which you will pay the bill)</p>
+                <p class="blog-text">For e.g. if there are 3 untracked files, fileA, fileB, fileC, but you only want to
+                    commit for fileA and fileB, so you first do git add fileA, then git add fileB, then do commit.
+                </p>
+                <p class="blog-text blog-note"><strong>git add . :-</strong> it will add all modified files at once.</p>
+            </li>
+
+            <li>
+                <h3>git commit -m 'message'</h3>
+
+                <p class="blog-text">It will commit all the changes added by git add command along with message.</p>
+            </li>
+
+            <li>
+                <h3>git push</h3>
+
+                <p class="blog-text">It will push all the committed code to the server.</p>
+            </li>
+
+        </ol>
+
+    </div>
+
+
+    <footer class="footer">
+        <div class="footer-header">Social media presence</div>
+        <ul class="social-links list-non-bullet">
+            <li class="list-item-inline">
+                <a class="link" href="https://github.com/Tarkjot-Khaira">github</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="https://twitter.com/TarkjotK">twitter</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="https://www.linkedin.com/in/tarkjot-kaur-khaira-75979b147/">linkedIn</a>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>
